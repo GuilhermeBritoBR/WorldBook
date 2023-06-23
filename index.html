@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>Cadastro | WordBook</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <p><h2>WordBook</h2></p>
+            <p><h3>Resenha de livros online</h3></p>
+        </header>
+        <div class="container">
+            <form>
+                <script src="script/cadastro.js"></script>
+                <p><h3>Cadastro</h3></p>
+                <label for="nome">Digite seu apelido:</label><br>
+                <input for="nome" id="nome" type="text" placeholder="Exemplo:José"/><br>
+                <label for="idade">Selecione sua idade:</label><br>
+                <input for="idade" for="idade" type="number" placeholder="Minimo 13 anos"/><br>
+                <label for="gender">Escolha seu genêro:</label><br>
+                <select id="gender" for="gender">
+                <option>Masculino</option> 
+                <option>Feminino</option> 
+                </select><br>
+                <label for="senha">Digite uma senha:  </label><br>
+                <input for="senha" type="password" placeholder="Minimo 8 caracteres"><br>
+                <label for="confirme">Confirme a senha:</label><br>
+                <input id="senha" type="password" for="confirme" placeholder="Sua senha está segura"><br>
+                <label for="chave_de_seguranca">Defina uma chave:</label><br>
+                <input id="senha_segundavia" for="chave_de_seguranca" type="text" placeholder="Maximo 5 caracteres"/>
+                <button onclick="info_chave()">?</button><br>
+                <button onclick="cadastro()">Criar</button><br>
+                <button type="submit">Entrar</button><br>
+                <a onclick="user_public()">Ou acessar sem conta</a><br>
+            </form>
+        </div>
+    </body>
+</html>
