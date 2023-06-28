@@ -1,5 +1,5 @@
 function cadastro()   {
-    const nome = document.getElementById("nome");
+    const nome = document.getElementById("nome").value;
     const idade = document.getElementById("idade");
     const senha = document.getElementById("senha").value;
     const gender = document.getElementById("gender");
@@ -13,7 +13,7 @@ function cadastro()   {
                 localStorage.setItem("gender", gender);
                 localStorage.setItem("chave", chave);
                 window.alert("Cadastrado com sucesso!");
-                window.location.assign("user.html");
+                window.location.href = "user.html";
             }else{
                 window.alert("A senha deve ter 8 caracteres!");
             }
@@ -27,4 +27,19 @@ function cadastro()   {
 }
 function info_chave()  {
     window.alert("Coloque uma chave que você se lembre, ela será utilizada em caso de recuperação de senha!");
+}
+function login()  {
+    const user = document.getElementById("user").value;
+    const senha = document.getElementById("senha").value;
+    const true_user = localStorage.getItem("user");
+    const true_senha = localStorage.getItem("senha");
+    if(user === true_user)
+    if(senha === true_senha){
+        window.location.href = "user.html";
+    }
+    else{
+        window.alert("Senha ou usuário errados!");
+    }else{
+        window.alert("Senha ou usuário errados!");
+    }
 }

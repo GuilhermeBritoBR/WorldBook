@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PTB-BR">
+    <head>
+        <title>Login | WordBook</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <p><h2>WordBook</h2></p>
+            <p><h3>Resenha de livros online</h3></p>
+        </header>
+        <div class="container">
+            <form>
+            <script src="script/cadastro.js"></script>
+            <p><h3>Login</h3></p>
+         <p>  <label for="user">Digite seu usuário:</label>
+            <input type="text" for="user" id="user"> </p>
+            <label for="senha">Digite sua senha:</label>
+            <input type="password" for="senha" id="senha"> 
+            <p>
+            <a href="recuperar.html">Esqueci senha</a> </p>
+            <!--lembrar de sempre por type = button para ir, se não da erro-->
+            <p><button onclick="login()" type="button">Entrar</button> </p>
+            <a onclick="user_public()">Ou acessar sem conta</a><br>
+            
+            </form>
+        </div>
+    </body>
+</html>
