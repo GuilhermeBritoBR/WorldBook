@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PTB-BR">
+<html lang="PT-BR">
     <head>
         <title>Login | WordBook</title>
         <meta charset="UTF-8">
@@ -13,15 +13,15 @@
         <div class="container">
             <form>
             <script src="script/cadastro.js"></script>
-            <p><h3>Login</h3></p>
+            <p><h3>Recuperação de senha</h3></p>
          <p>  <label for="user">Digite seu usuário:</label>
             <input type="text" for="user" id="user"> </p>
-            <label for="senha">Digite sua senha:</label>
-            <input type="password" for="senha" id="senha"> 
+            <label for="chave">Digite sua chave:</label>
+            <input type="text" for="chave" id="chave"> 
             <p>
-            <a href="recuperar.html">Esqueci senha</a> </p>
+            <a href="login.html">Realizar Login</a> </p>
             <!--lembrar de sempre por type = button para ir, se não da erro-->
-            <p><button onclick="login()" type="button">Entrar</button> </p>
+            <p><button onclick="recuperar()" type="button">Lembrar</button> </p>
             <a onclick="user_public()" type="button">Ou acessar sem conta</a><br>
             
             </form>

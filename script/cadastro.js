@@ -4,7 +4,7 @@ function cadastro()   {
     const senha = document.getElementById("senha").value;
     const gender = document.getElementById("gender");
     const senha_segundavia = document.getElementById("senha_segundavia");
-    const chave = document.getElementById("chave");
+    const chave = document.getElementById("chave").value;
     if(idade.value >= 12){
         if(senha === senha_segundavia.value){
             if(senha.length > 7){
@@ -42,4 +42,22 @@ function login()  {
     }else{
         window.alert("Senha ou usuário errados!");
     }
+}
+function recuperar()   {
+    const user = document.getElementById("user").value;
+    const chave = document.getElementById("chave").value;
+    const true_user = localStorage.getItem("user");
+    const true_chave = localStorage.getItem("chave");
+    const senha = localStorage.getItem("senha");
+    if(user === true_user)
+    if(chave === true_chave){
+        window.alert("Sua senha é: " + senha );
+    }else{
+        window.alert("Chave ou usuário incorreto!");
+    }else{
+        window.alert("Chave ou usuário incorreto!");
+    }
+}
+function acesso()  {
+    window.location.href = "register.html";
 }
