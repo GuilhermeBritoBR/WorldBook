@@ -1,0 +1,80 @@
+.image-bloco{
+
+    display: inline-block;
+}
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+}
+@font-face {
+    font-family: Inter;
+    src: local(Inter), url(../assets/Inter-VariableFont_slnt,wght.ttf);
+}
+body{
+    width: 1366px;
+    height: 768px;
+    border: 0px;
+    margin: 0px;
+}
+header{
+    text-align: center;
+    box-shadow: inset 0.0em 0.0em 0.2em #000;
+    position: relative;
+    background-color: #d9d9d9;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid 1px #000;
+    border-radius: 0px 0px 70px 70px;
+}
+header h2{
+    margin:0px;
+}
+.container{
+  text-align: center;
+}
+.bloco-center{
+    box-shadow: inset 0.0em 0.0em 0.2em #000;
+
+    margin-top: 30px;
+    background-color: #d9d9d9;
+    display: inline-block;
+    height: 360px;
+    width: 500px;
+    border: solid 1px #000;
+    border-radius: 29px;
+}
+.image{
+    width: 400px;
+    height: 250px;
+    display: inline-block;
+    border: solid 1px #000;
+    border-radius: 29px;
+}
+.title-bloco-center{
+    display: inline-block;
+}
+button{
+    margin-top:5px;
+    background-color: #fff;
+    border: solid 1px #000;
+    border-radius: 15px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: inset 0.0em 0.0em 0.1em #000;
+}
+.question_button{
+    width: 30px;
+}
+form{
+    margin-left: 200px;
+    text-align: left;
+}
