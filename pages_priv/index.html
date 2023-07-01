@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title>Home | WordBook</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    </head>
+    <body onload="saudation()">
+        <header>
+
+            <script src="../script/cadastro.js"></script>
+            <h2>WordBook</h2>
+            </p>
+            <p><h3>Resenha de livros online</h3> </p>
+            <div class="user-saudation">
+                <div class="saudation-div">
+                    <!--no P tem um saudação com srcipt com o nome do user e um olá-->
+                    <p id="saudation"></p>
+                </div>
+                <div class="user-picture">
+                    <img class="avatar" src="../assets/avatar.png"/>
+                </div>
+               
+                    <div class="sanduiche-div"><img class="sanduiche" onclick="menu_ativado()" src="/assets/sanduiche.png"/>
+                        <sanduiche id="sanduiche">
+                         
+                           <a href=#>Dados da conta</a><br>
+                           <a href=#>Ver suas resenhas</a><br>
+                           <a href="../index.html">Sair</a><br>
+
+                    
+                    </sanduiche>
+                    </div>
+        
+            </div>            
+        </header>
+        <div class="container">
+            <desaparece id="desaparece">
+            <div class="cardeneta-de-texto-caixa">
+                <p>
+                <input type="text" placeholder="Digite o titulo da obra:" id="titulo"></p>
+                <textarea id="resenha-user"></textarea> <br>
+                <button type="button" onclick="salvar_text_resenha()">Salvar</button>
+            </div>
+            </desaparece>
+            <info id="info">
+                <p>Sua resenha foi salva!</p>
+                <button type="button" onclick="ver_resenhas()">Ver resenhas</button>
+                <p id="resenha-print"></p>
+                <p id="text-print"></p>
+            </info>
+        </div>
+    </body>

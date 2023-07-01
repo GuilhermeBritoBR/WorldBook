@@ -76,3 +76,36 @@ function user_public()   {
         window.location.href= "register.html";
     }
 }
+function saudation()   {
+    var nome = localStorage.getItem("user");
+    let caixa = document.getElementById("saudation");
+    caixa.innerText = "Olá, " + nome;
+}
+function menu_ativado()   {
+    if(sanduiche.style.display == 'none'){
+        sanduiche.style.display = 'block';
+    }else{
+        sanduiche.style.display = 'none';
+    }
+}
+function salvar_text_resenha()   {
+    let text = document.getElementById("resenha-user").value;
+    let title = document.getElementById("titulo").value;
+    localStorage.setItem("resenha", text);
+    localStorage.setItem("titulo", title);
+    window.alert("Resenha salva!");
+    desaparece.style.display = 'none';
+    info.style.display = 'block';
+}
+function ver_resenhas() {
+    let titulo = localStorage.getItem("titulo");
+    let resenha = localStorage.getItem("resenha");
+    const print = document.getElementById("resenha-print");
+    const print_text = document.getElementById("text-print");
+    print.textContent = "Titulo: " + titulo;
+    print_text.textContent = resenha;
+    
+}
+function exit() {
+    window.location.href = "../index.html";
+}
