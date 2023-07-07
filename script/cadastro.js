@@ -2,7 +2,7 @@ function cadastro()   {
     const nome = document.getElementById("nome").value;
     const idade = document.getElementById("idade");
     const senha = document.getElementById("senha").value;
-    const gender = document.getElementById("gender");
+    const gender = document.getElementById("gender").value;
     const senha_segundavia = document.getElementById("senha_segundavia");
     const chave = document.getElementById("chave").value;
     if(nome.length > 1){
@@ -108,4 +108,28 @@ function ver_resenhas() {
 }
 function exit() {
     window.location.href = "../index.html";
+}
+ function print_info()   {
+    var nome = localStorage.getItem("user");
+    let caixa = document.getElementById("saudation");
+    caixa.innerText = "Olá, " + nome;
+    var nome = localStorage.getItem("user");
+    var senha = localStorage.getItem("senha");
+    var gender = localStorage.getItem("gender");
+    var chave = localStorage.getItem("chave"); 
+     const nome_print = document.getElementById("nome");
+    const idade_print = document.getElementById("idade_print");
+    const senha_print = document.getElementById("senha_print");
+    const gender_print = document.getElementById("gender_print");
+    const chave_print = document.getElementById("chave_print");
+    nome_print.textContent = "Nome: " + nome;
+    
+    gender_print.textContent = "Genêro: " + gender;
+    senha_print.textContent = "Senha:  " + senha;
+    chave_print.textContent = "Chave: " + chave;
+
+}
+function escrever_outra()    {
+    info.style.display = 'none';
+    desaparece.style.display = 'block';
 }

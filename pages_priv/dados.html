@@ -6,8 +6,8 @@
         <link rel="stylesheet" type="text/css" href="../styles/index.css">
     </head>
     <!--o onload saudation é para manter a saudação "olá" + user-->
-    <body onload="saudation()">
-        <header>
+    <body onload="print_info()">
+        <header >
             <!---a interatividade é por controle de style pelo javascript, ver as funções correspodentes-->
             <script src="../script/cadastro.js"></script>
             <h2>WordBook</h2>
@@ -32,30 +32,17 @@
                     
                     </sanduiche>
                     </div>
-        
+                
             </div>            
         </header>
         <div class="container">
-            <!--desaparece serve para fazer as funcionalidades pós salvamentos aparecerem-->
-            <desaparece id="desaparece">
-            <div class="cardeneta-de-texto-caixa">
-                <p>
-                <input type="text" placeholder="Digite o titulo da obra:" id="titulo"></p>
-                <textarea id="resenha-user"></textarea> <br>
-                <!----->
-                <button type="button" onclick="salvar_text_resenha()">Salvar</button>
-                <!----->
+            <h2>Informações da conta</h2>
+            <div class="conjunto">
+                <p id="nome"></p>
+                <p id="idade_print"></p>
+                <p id="gender_print"></p>
+                <p id="senha_print"></p>
+                <p id="chave_print"></p>
             </div>
-            </desaparece>
-            <!--info é a que aparece pós salvamneto-->
-            <info id="info">
-                <p>Sua resenha foi salva!</p>
-                <!-------->
-                <button type="button" onclick="ver_resenhas()">Ver resenhas</button>
-                <button type="button" onclick="escrever_outra()">Escrever outra</button>
-                <!------->
-                <p id="resenha-print"></p>
-                <p id="text-print"></p>
-            </info>
         </div>
     </body>
